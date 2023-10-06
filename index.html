@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeCare</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="website icon" type="png" href="./images/WeCare.png" />
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="bg">
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="wecarelogo">
+              <img src="./images/WeCare.png" width="512" height="512" /><span
+                class="wecare"
+                ><h2>WeCare</h2></span
+              >
+            </li>
+            <li>
+              <div class="home-menu">
+                <span class="home"
+                  >Home<i class="ri-arrow-down-s-line"></i
+                ></span>
+                <div class="dropdown-content1">
+                  <!-- dropdown-content1 -->
+                  <a href="">Find a doctor</a>
+                  <a href="">WeCare Surgery</a>
+                  <a href="">Service Excellence</a>
+                  <a href="">Health and Lifestyle</a>
+                  <a href="">Medical Feed</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="depart-menu">
+                <span class="department"
+                  >Department<i class="ri-arrow-down-s-line"></i
+                ></span>
+                <div class="dropdown-content2">
+                  <!-- dropdown-content2 -->
+                  <a href="">Cardiology</a>
+                  <a href="">Pharmacy</a>
+                  <a href="">Orthopaedic</a>
+                  <a href="">Pathology</a>
+                  <a href="">Dentist</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="doctors-menu">
+                <span class="doctors"
+                  >Doctors<i class="ri-arrow-down-s-line"></i
+                ></span>
+                <div class="dropdown-content3">
+                  <!-- dropdown-content3 -->
+                  <a href="">Dr. George Beller</a>
+                  <a href="">Dr. Mary Jensen</a>
+                  <a href="">Dr. Stacey Mills</a>
+                  <a href="">Dr. Mark Okusa</a>
+                  <a href="">Dr. Robert Boyle</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blogs-menu">
+                <span class="blogs"
+                  >Blogs<i class="ri-arrow-down-s-line"></i
+                ></span>
+                <div class="dropdown-content4">
+                  <!-- dropdown-content4 -->
+                  <a href="">Health Library </a>
+                  <a href="">Covid 19 Updates</a>
+                  <a href="">Covid 19 FAQS</a>
+                  <a href="">COVID-19 Vaccination</a>
+                  <a href="">COVID-19 New Symptoms</a>
+                </div>
+              </div>
+            </li>
+            <li class="about-menu">About Us</li>
+            <li class="login">
+              <button onclick="openlogin(), blur()" href="#mylogin">
+                Login
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="hero-text">
+          <h1 class="headingtext1">Your <span class="health">health</span></h1>
+          <h1 class="headingtext1">is always</h1>
+          <h1 class="headingtext1">in the first place</h1>
+          <p class="slogan">
+            We can provide excellent service by prioritizing the <br />safety
+            and security to the patients.
+          </p>
+          <button class="readmore">Read more</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Login popup -->
+      <section class="login_popup" id="blur">
+        <form id="mylogin">
+          <!-- Headings for the form -->
+          <div class="headingsContainer">
+            <h3>Login</h3>
+            <p>Login with your username and password</p>
+          </div>
+
+          <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+              required
+            />
+
+            <br /><br />
+
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="pswrd"
+              required
+            />
+
+            <!-- Submit button -->
+            <button type="submit" onclick="closelogin()">Login</button>
+            <!-- Sign up link -->
+            <p class="register">Not a member? <a href="#">Register here!</a></p>
+          </div>
+        </form>
+      </section>
+
+      <!-- Book Your Appointment -->
+
+      <div class="appointment">
+        <div class="form1">
+          <h2 class="book_appointment">Book Your Appointment Today!</h2>
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address*"
+              required
+            />
+            <input
+              type="date"
+              name="date"
+              placeholder="Appointment date*"
+              required
+            /><br />
+            <select
+              id="selectdoctor"
+              name="doctor"
+              aria-placeholder="select your doctor"
+              required
+            >
+              <option selected>Select Doctor</option>
+              <option>Cardiologist</option>
+              <option>Pharmacist</option>
+              <option>Orthopedic</option>
+              <option>Dentist</option>
+            </select>
+            <button id="placeorder" name="order" type="submit">
+              Book your order
+            </button>
+          </form>
+        </div>
+        <section class="nurse">
+          <img src="./images/doctorpng.png" alt="nurse_image" />
+        </section>
+      </div>
+
+      <section class="services">
+        <h1 class="gradient">Services</h1>
+        <h1 class="our_departments">Our Departments</h1>
+        <div class="department_cards">
+          <div class="cards">
+            <i class="fa-light fa-heart-pulse"></i><span>Cardiology</span>
+          </div>
+          <div class="cards">
+            <i class="fa-light fa-capsules"></i><span>Pharmacy</span>
+          </div>
+          <div class="cards">
+            <i class="fa-light fa-bone-break"></i><span>Orthopedic</span>
+          </div>
+          <div class="cards">
+            <i class="fa-light fa-microscope"></i><span>Pathalogy</span>
+          </div>
+          <div class="cards">
+            <i class="fa-light fa-tooth"></i><span>Dentistry</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Wecare -->
+      <section class="aboutus">
+        <div class="image image1">
+          <img src="./images/au7.jpg" alt="" />
+          <div class="imagetext">
+            <h3><i class="fa-light fa-check-double"></i>Health Care Service</h3>
+          </div>
+        </div>
+        <div class="image image2">
+          <img src="./images/aboutus1.jpg" alt="" />
+          <div class="imageicon">
+            <i class="fa-sharp fa-solid fa-play"></i>
+          </div>
+        </div>
+
+        <div class="aboutus_text">
+          <h2>ABOUT WECARE</h2>
+          <h1>We Collaborate for <span>Better Healthcare </span></h1>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </h3>
+          <div class="aboutus_pov">
+            <div>
+              <h4>Our Vision</h4>
+              <p>
+                We never get behind of the latest medical trends. Lorem ipsum
+                dolor sit, consectetur.
+              </p>
+            </div>
+            <div>
+              <h4>Our Mission</h4>
+              <p>
+                The most interesting hospital in the world. Lorem ipsum dolor
+                sit amet, consectetur.
+              </p>
+            </div>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <!-- Expert Doctors -->
+      <section class="doctors">
+        <h1 class="gradient">Doctors</h1>
+        <h1 class="expert_doctors">Meet Our Expert Doctors</h1>
+        <div class="doctors_card">
+          <div class="expert_container">
+            <div class="image">
+              <img src="./images/doctor2.jpg" alt="" />
+              <div class="hover_text">
+                <span
+                  >"A highly skilled and experienced cardiologist dedicated to
+                  diagnosing and treating heart-related conditions with
+                  precision and compassion"
+                  <h1>
+                    <i class="fa-solid fa-circle-phone"></i> Call Now
+                  </h1></span
+                >
+              </div>
+            </div>
+            <div class="expert_name">
+              <p>In profile since 6 years</p>
+              <h1>Dr. George Beller</h1>
+              <h2>Cardiologist</h2>
+            </div>
+          </div>
+
+          <div class="expert_container">
+            <div class="image">
+              <img src="./images/doctor 4.jpg" alt="" />
+              <div class="hover_text">
+                <span
+                  >"Experienced dentist with a proven track record of providing
+                  exceptional dental care and achieving optimal patient
+                  outcomes"
+                  <h1>
+                    <i class="fa-solid fa-circle-phone"></i> Call Now
+                  </h1></span
+                >
+              </div>
+            </div>
+            <div class="expert_name">
+              <p>In profile since 5 years</p>
+              <h1>Dr. Mary Jensen</h1>
+              <h2>Dentist</h2>
+            </div>
+          </div>
+
+          <div class="expert_container">
+            <div class="image">
+              <img src="./images/doctor 5.jpg" alt="" />
+              <div class="hover_text">
+                <span
+                  >"Highly skilled orthopedic specialist with extensive
+                  experience in diagnosing to optimize patient mobility and
+                  quality of life"
+                  <h1>
+                    <i class="fa-solid fa-circle-phone"></i> Call Now
+                  </h1></span
+                >
+              </div>
+            </div>
+            <div class="expert_name">
+              <p>In profile since 10 years</p>
+              <h1>Dr. Stacey Mills</h1>
+              <h2>Orthopedic</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+
+      <section class="faqs">
+        <div class="faqs_text">
+          <div class="top_faqtext">
+            <h2>FAQs</h2>
+            <h1>Frequently Asked <span>Questions </span></h1>
+            <h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </h3>
+          </div>
+          <div class="faqs_box">
+            <div>
+              <h4>How do I make an appointment at WeCare?</h4>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div>
+              <h4>Do you have a pediatrician?</h4>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div>
+              <h4>Does your place provide health insurance?</h4>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div>
+              <h4>What payment method do ypu provide?</h4>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="faqs_image">
+          <img src="./images/faq2.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Footer banner -->
+      <div class="bottom_banner">
+        <div class="image">
+          <img src="./images/footer section bg1.jpg" alt="" />
+          <div class="filter_text">
+            <h2>Get In Touch</h2>
+            <h1>Best Medical & Health <span>Care in your city</span></h1>
+            <h2>We've 25 years of experience in the medical services</h2>
+            <div class="bottom_banner_btn">
+              <button class="contact_us_btn">Contact Us | +</button>
+              <button>Doctors | +</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <section class="footer">
+        <div class="foot_box foot_box1">
+          <ul>
+            <li>
+              <img src="./images/WeCare.png" alt="" /><span> WeCare</span>
+            </li>
+            <li><h2>Get a lot of information About Us</h2></li>
+            <li><h1>Subscribe Our Newsletter</h1></li>
+            <li><input type="email" placeholder="Enter email" /></li>
+            <li><button type="submit">Submit</button></li>
+          </ul>
+        </div>
+        <div class="foot_box foot_box2">
+          <h1>Patient Care</h1>
+          <ul>
+            <li>Find a Doctor</li>
+            <li>Medical Services</li>
+            <li>Patient Testimonials</li>
+            <li>Value added Services</li>
+            <li>Pay Online</li>
+          </ul>
+        </div>
+        <div class="foot_box foot_box2">
+          <h1>Contact Us</h1>
+          <ul>
+            <li>Post a Query</li>
+            <li>Consult Doctors Online</li>
+            <li>Book Offline Appointment</li>
+            <li>Give your Feedback</li>
+            <li>WeCare Lifeline</li>
+          </ul>
+        </div>
+        <div class="foot_box foot_box3">
+          <ul class="foot_icons">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+          <h1>Gallery</h1>
+          <ul class="foot_gallery">
+            <li><img src="./images/gallery1.jpg" alt="" /></li>
+            <li><img src="./images/gallery2.jpg" alt="" /></li>
+            <li><img src="./images/gallery3.jpg" alt="" /></li>
+            <li><img src="./images/gallery4.jpg" alt="" /></li>
+            <li><img src="./images/gallery5.jpg" alt="" /></li>
+            <li><img src="./images/gallery6.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <div class="copyright">
+        <span> &copy;WeCare 2023, All Rights Reserved</span>
+        <div class="right_text">
+          <span>Setting & privacy</span>
+          <span>Faqs</span>
+          <span>Doctors</span>
+        </div>
+      </div>
+    </footer>
+
+    <!--Javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
